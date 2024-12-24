@@ -4,6 +4,15 @@
 
 :root {
   --white: #FCFCFD;
+  --white-1: #fff;
   --blue-1: #3538CD;
+  --blue-2: rgba(24, 119, 242, 1);
+  --blue-3: rgba(128, 152, 249, 1);
+  --blue-4: rgba(97, 114, 243, 1);
   --gray-1: #667085;
+  --gray-2: rgba(71, 84, 103, 1);
+  --gray-3: #475467;
+  --placeholder-gray: #98A2B3;
+  --black-1: rgba(0, 0, 0, 1);
+
 }
