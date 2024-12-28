@@ -1,0 +1,23 @@
+.feature {
+  .feature__item {
+    .feature__item__icon {
+      margin-bottom: $mg-2;
+      .feature__item__icon__bg1 {
+        padding: $pd-0;
+        background-color: #eef4ff;
+        display: inline-block;
+        border-radius: 100%;
+        .feature__item__icon__bg2 {
+          padding: $pd-0;
+          background-color: #e0eaff;
+          display: inline-block;
+          border-radius: 100%;
+          svg {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .backgroundImg {
   background-position: center;
   background-repeat: no-repeat;
@@ -228,6 +229,94 @@ body {
   }
 }
 
+.intro {
+  margin-top: 100px;
+}
+.intro .intro__container .intro__content {
+  margin-bottom: 70px;
+  row-gap: 40px;
+}
+.intro .intro__container .intro__content .intro__content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.intro .intro__container .intro__content .intro__content__text h1 {
+  color: #3538cd;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.intro .intro__container .intro__content .intro__content__text h2 {
+  color: #6172F3;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.intro .intro__container .intro__content .intro__content__text h3 {
+  color: rgb(97, 114, 243);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.intro .intro__container .intro__content .intro__content__text h4 {
+  color: rgb(97, 114, 243);
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.intro .intro__container .intro__content .intro__content__text a {
+  border-radius: 100px;
+  color: #6172F3;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.intro .intro__container .intro__content .intro__content__text p {
+  color: #667085;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.intro .intro__container .intro__content .intro__content__img {
+  align-items: center;
+}
+.intro .intro__container .intro__content .intro__content__img .intro__img__1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.intro .intro__container .intro__content .intro__content__img .intro__img__2 {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+.intro .intro__container .intro__content .intro__content__img .intro__img__3 {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.feature .feature__item .feature__item__icon {
+  margin-bottom: 20px;
+}
+.feature .feature__item .feature__item__icon .feature__item__icon__bg1 {
+  padding: 10px;
+  background-color: #eef4ff;
+  display: inline-block;
+  border-radius: 100%;
+}
+.feature .feature__item .feature__item__icon .feature__item__icon__bg1 .feature__item__icon__bg2 {
+  padding: 10px;
+  background-color: #e0eaff;
+  display: inline-block;
+  border-radius: 100%;
+}
+.feature .feature__item .feature__item__icon .feature__item__icon__bg1 .feature__item__icon__bg2 svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 .button--white {
   color: #686f7a;
   background-color: #fff;
@@ -256,6 +345,21 @@ body {
   color: #fff;
   background-color: #521822;
   border: 1px solid #521822;
+}
+
+.button--blue {
+  color: #fff;
+  background-color: #3538cd;
+  border: 1px solid #3538cd;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.button--blue:hover {
+  color: #fff;
+  background-color: #292ca6;
+  border: 1px solid #292ca6;
 }
 
 .button--dropup {
@@ -504,7 +608,7 @@ body {
   height: 1px;
   background-color: #667085;
 }
-.login__screen #loginBtn {
+.login__screen #loginBtn, .login__screen #registerBtn {
   width: 100%;
   display: flex;
   justify-content: center;
