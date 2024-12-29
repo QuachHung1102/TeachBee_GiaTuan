@@ -65,9 +65,12 @@ body {
   flex-grow: 1;
   text-align: center;
   margin-right: 0;
-  color: #3538cd;
+  color: #6172F3;
   font-size: 24px;
   font-weight: 700;
+}
+.myNavbar .myNavbar__left .navbar-brand span {
+  color: #3538cd;
 }
 .myNavbar .myNavbar__left .myNavbar__Categories {
   flex-grow: 1;
@@ -297,6 +300,9 @@ body {
   object-fit: contain;
 }
 
+.feature {
+  margin-bottom: 100px;
+}
 .feature .feature__item .feature__item__icon {
   margin-bottom: 20px;
 }
@@ -313,8 +319,82 @@ body {
   border-radius: 100%;
 }
 .feature .feature__item .feature__item__icon .feature__item__icon__bg1 .feature__item__icon__bg2 svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.feature .feature__item h3 {
+  color: #344050;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Inter";
+  margin: 20px 0;
+}
+.feature .feature__item p {
+  color: #686f7a;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Inter";
+}
+.feature .feature__item .learnMore {
+  text-decoration: none;
+  color: #3538cd;
+  font-size: 18px;
+  font-weight: 600;
+}
+.feature hr {
+  margin-top: 40px;
+}
+
+footer {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+footer .footer__left h3 {
+  color: #6172F3;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+footer .footer__left h3 span {
+  color: #3538cd;
+}
+footer .footer__left p {
+  color: #686f7a;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Inter";
+}
+footer .footer__right h6 {
+  color: #667085;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+footer .footer__right ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+footer .footer__right ul li a {
+  color: #475467;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+footer .footer__right ul li a:hover {
+  color: #ec5252;
+}
+footer .footer__bottom {
+  width: 90%;
+  margin: 38px auto;
+}
+footer .footer__bottom img {
+  width: 110px;
+  margin-right: 10px;
+}
+footer .footer__bottom .nav-link {
+  padding: 0 10px;
 }
 
 .button--white {
