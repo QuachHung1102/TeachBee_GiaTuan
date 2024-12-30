@@ -65,7 +65,7 @@ body {
   flex-grow: 1;
   text-align: center;
   margin-right: 0;
-  color: #6172F3;
+  color: #6172f3;
   font-size: 24px;
   font-weight: 700;
 }
@@ -251,7 +251,7 @@ body {
   font-family: "Montserrat";
 }
 .intro .intro__container .intro__content .intro__content__text h2 {
-  color: #6172F3;
+  color: #6172f3;
   font-size: 36px;
   font-weight: 600;
   font-family: "Montserrat";
@@ -270,7 +270,7 @@ body {
 }
 .intro .intro__container .intro__content .intro__content__text a {
   border-radius: 100px;
-  color: #6172F3;
+  color: #6172f3;
   font-size: 18px;
   font-weight: 600;
   font-family: "Montserrat";
@@ -351,7 +351,7 @@ footer {
   font-weight: normal;
 }
 footer .footer__left h3 {
-  color: #6172F3;
+  color: #6172f3;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -395,6 +395,68 @@ footer .footer__bottom img {
 }
 footer .footer__bottom .nav-link {
   padding: 0 10px;
+}
+
+.create__lecture {
+  margin: 40px 0;
+}
+.create__lecture .create__lecture__content {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-image: linear-gradient(to right, #fcfcfd, #ebe9fe, #fcfcfd);
+  border-radius: 10%;
+}
+.create__lecture .create__lecture__content .create__lecture__btn {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 100px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.create__lecture .create__lecture__content .create__lecture__btn .create__icon {
+  background-color: #ebe9fe;
+  padding: 10px;
+  border-radius: 100%;
+  transition: all 0.4s;
+}
+.create__lecture .create__lecture__content .create__lecture__btn .createLectureTitle {
+  color: #6938ef;
+  font-size: 24px;
+  font-weight: 600;
+  transition: all 0.4s;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  font-family: "Inter";
+}
+.create__lecture .create__lecture__content .create__lecture__btn:hover {
+  background-color: #6938ef;
+}
+.create__lecture .create__lecture__content .create__lecture__btn:hover .create__icon {
+  background-color: #fff;
+}
+.create__lecture .create__lecture__content .create__lecture__btn:hover .createLectureTitle {
+  color: #fff;
+}
+
+.lecture__list .lecture__selector .lecture__selector__top {
+  padding: 10px 0;
+}
+.lecture__list .lecture__selector .lecture__selector__top .lecture__selector__top__left h4 {
+  margin: 0;
+  color: #2d31a6;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+.lecture__list .lecture__selector .lecture__selector__top .lecture__selector__top__right p {
+  margin: 0;
+  color: #667085;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter";
 }
 
 .button--white {
@@ -656,7 +718,7 @@ footer .footer__bottom .nav-link {
   background: #fcfcfd;
 }
 .login__screen__form input::placeholder {
-  color: #98A2B3 !important;
+  color: #98a2b3 !important;
 }
 .login__screen__form__social__icon {
   padding: 9px;
