@@ -24,6 +24,7 @@ body {
   color: #29303b;
   background-color: #fcfcfd;
   font-style: normal;
+  user-select: none;
 }
 
 .row {
@@ -441,8 +442,13 @@ footer .footer__bottom .nav-link {
   color: #fff;
 }
 
+.lecture__list {
+  margin-bottom: 100px;
+}
 .lecture__list .lecture__selector .lecture__selector__top {
-  padding: 10px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 25px;
 }
 .lecture__list .lecture__selector .lecture__selector__top .lecture__selector__top__left h4 {
   margin: 0;
@@ -457,6 +463,108 @@ footer .footer__bottom .nav-link {
   font-size: 18px;
   font-weight: 400;
   font-family: "Inter";
+}
+.lecture__list .lecture__selector .lecture__selector__top .lecture__selector__top__right .btn-group {
+  display: block;
+}
+.lecture__list .lecture__selector .lecture__selector__top .lecture__selector__top__right .btn-group .button--dropup {
+  min-width: 160px;
+}
+.lecture__list .lecture__selector .lecture__selector__top .lecture__selector__top__right .btn-group .button--dropup i {
+  padding: 0 5px;
+}
+.lecture__list .lecture__selector .lecture__selector__top .lecture__selector__top__right .btn-group .button--dropup::after {
+  margin-left: 30%;
+}
+.lecture__list .lecture__selector .lecture__selector__top .lecture__selector__top__right .btn-group .dropdown-menu {
+  font-size: 13px;
+  text-align: center;
+}
+.lecture__list .lecture__selector .lecture__selector__bottom {
+  border-bottom: 1px solid #dee2e6;
+}
+.lecture__list .lecture__selector .lecture__selector__bottom .lecture__selector__bottom__content {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.lecture__list .lecture__selector .lecture__selector__bottom .lecture__selector__bottom__content .lecture__selector__title {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 15px;
+  border-right: 1px solid #dee2e6;
+}
+.lecture__list .lecture__selector .lecture__selector__bottom .lecture__selector__bottom__content .lecture__selector__title h5 {
+  color: #152e4d;
+  font-size: 24px;
+  font-weight: 600;
+}
+.lecture__list .lecture__selector .lecture__selector__bottom .lecture__selector__bottom__content .lecture__selector__filter {
+  width: 90%;
+}
+.lecture__list .lecture__selector .lecture__selector__bottom .lecture__selector__bottom__content .lecture__selector__filter .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 40px;
+}
+.lecture__list .lecture__selector .lecture__selector__bottom .lecture__selector__bottom__content .lecture__selector__filter .form-group h6 {
+  color: #667085;
+  font-size: 18px;
+  font-weight: normal;
+}
+.lecture__list .lecture__list__content .lecture__list__content__title h5 {
+  color: #152e4d;
+  font-size: 24px;
+  font-weight: 600;
+}
+.lecture__list .lecture__list__content .lecture__list__content__list p {
+  margin: 0;
+}
+.lecture__list .lecture__list__content .lecture__list__content__list .lecture__item {
+  border: 1px solid #c7d7fe;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 15px 10px;
+}
+.lecture__list .lecture__list__content .lecture__list__content__list .lecture__item .item__info {
+  width: 15%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f5f8ff;
+  border: 2px solid #c7d7fe;
+  border-radius: 10px;
+}
+.lecture__list .lecture__list__content .lecture__list__content__list .lecture__item .item__info p:first-child {
+  border-bottom: 1px solid #c7d7fe;
+}
+.lecture__list .lecture__list__content .lecture__list__content__list .lecture__item .item__info p {
+  margin: 0;
+  padding: 5px 0;
+}
+.lecture__list .lecture__list__content .lecture__list__content__list .lecture__item .item__content h6 {
+  color: #152e4d;
+  font-size: 18px;
+  font-weight: 600;
+}
+.lecture__list .lecture__list__content .lecture__list__content__list .lecture__item .item__content p {
+  color: #667085;
+  font-size: 15px;
+  font-weight: normal;
+}
+.lecture__list .lecture__list__content .lecture__list__content__list .playIcon {
+  background-color: rgb(224, 234, 255);
+  padding: 10px;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 .button--white {

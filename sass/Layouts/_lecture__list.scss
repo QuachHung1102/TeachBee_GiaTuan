@@ -1,7 +1,10 @@
 .lecture__list {
+  margin-bottom: $mg-7;
   .lecture__selector {
     .lecture__selector__top {
-      padding: $pd-0 0;
+      padding: $pd-1 0;
+      border-bottom: 1px solid $color-gray-2;
+      padding-bottom: $mg-1;
       .lecture__selector__top__left {
         h4 {
           margin: 0;
@@ -15,6 +18,106 @@
           @include styleText($color-gray-7, $fs-3, $fw-4);
           font-family: "Inter";
         }
+        .btn-group {
+          display: block;
+          .button--dropup {
+            min-width: 160px;
+            i {
+              padding: 0 $pd-2;
+            }
+            &::after {
+              margin-left: 30%;
+            }
+          }
+          .dropdown-menu {
+            font-size: $fs-1;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .lecture__selector__bottom {
+      border-bottom: 1px solid $color-gray-2;
+      .lecture__selector__bottom__content {
+        padding: $pd-1 0;
+        display: flex;
+        justify-content: space-between;
+        column-gap: $pd-3;
+        .lecture__selector__title {
+          width: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-inline: $pd-1;
+          border-right: 1px solid $color-gray-2;
+          h5 {
+            @include styleText($color-dark-0, $fs-5, $fw-1);
+          }
+        }
+        .lecture__selector__filter {
+          width: 90%;
+          .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            column-gap: $mg-5;
+            h6 {
+              @include styleText($color-gray-7, $fs-3, $fw-0);
+            }
+          }
+        }
+      }
+    }
+  }
+  .lecture__list__content {
+    .lecture__list__content__title {
+      h5 {
+        @include styleText($color-dark-0, $fs-5, $fw-1);
+      }
+    }
+    .lecture__list__content__list {
+      p {
+        margin: 0;
+      }
+      .lecture__item {
+        border: 1px solid #c7d7fe;
+        border-top-right-radius: $border-radius-100;
+        border-bottom-right-radius: $border-radius-100;
+        border-top-left-radius: $border-radius-15;
+        border-bottom-left-radius: $border-radius-15;
+        padding: $pd-1 $pd-0;
+        .item__info {
+          width: 15%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: $pd-0;
+          background-color: #f5f8ff;
+          border: 2px solid #c7d7fe;
+          border-radius: $border-radius-10;
+          p:first-child {
+            border-bottom: 1px solid #c7d7fe;
+          }
+          p {
+            margin: 0;
+            padding: $pd-2 0;
+          }
+        }
+        .item__content {
+          h6 {
+            @include styleText($color-dark-0, $fs-3, $fw-1);
+          }
+          p {
+            @include styleText($color-gray-7, $fs-0, $fw-0);
+          }
+        }
+      }
+      .playIcon {
+        background-color: $color-blue-8;
+        padding: $pd-0;
+        border-radius: 100%;
+        cursor: pointer;
       }
     }
   }

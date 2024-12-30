@@ -10,6 +10,7 @@ body {
   color: $color-black-0;
   background-color: $white;
   font-style: normal;
+  user-select: none;
 }
 
 .row {

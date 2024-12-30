@@ -104,20 +104,179 @@
             <div class="lecture__selector__top__left d-flex align-items-center">
               <h4>Danh sách bài giảng</h4>
             </div>
-            <div class="lecture__selector__top__right d-flex align-items-center column-gap-lg-2">
-              <p>Cũ đến mới</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <path
-                  d="M29.1216 17.3467L22.935 11.1467C22.5318 10.7756 21.9115 10.7756 21.5083 11.1467L15.3616 17.3467C15.1109 17.7335 15.157 18.2416 15.4733 18.5769C15.7897 18.9122 16.2942 18.9878 16.695 18.76L20.9883 14.4667V26.3333C20.9883 26.8856 21.436 27.3333 21.9883 27.3333C22.5406 27.3333 22.9883 26.8856 22.9883 26.3333V14.08L27.6683 18.76C28.0587 19.1499 28.6912 19.1499 29.0816 18.76C29.4828 18.3807 29.5008 17.748 29.1216 17.3467Z"
-                  fill="#3538CD" />
-                <path
-                  d="M15.3616 12.2933C14.9712 11.9034 14.3387 11.9034 13.9483 12.2933L9.69497 16.5867V5C9.69497 4.44772 9.24726 4 8.69497 4C8.14269 4 7.69497 4.44772 7.69497 5V17L3.01497 12.2933C2.62096 11.9262 2.00696 11.937 1.62615 12.3178C1.24533 12.6987 1.2345 13.3127 1.60164 13.7067L7.78831 19.9067C8.1833 20.2981 8.81999 20.2981 9.21497 19.9067L15.3616 13.7067C15.7516 13.3162 15.7516 12.6838 15.3616 12.2933Z"
-                  fill="#3538CD" />
-              </svg>
+            <div class="lecture__selector__top__right d-flex align-items-center">
+              <div class="btn-group dropup text-md-end mt-3 mt-md-0">
+                <button type="button" class="btn button--dropup dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Cũ đến mới
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cũ đến mới</a></li>
+                  <li><a class="dropdown-item" href="#">Mới đến cũ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="lecture__selector__bottom">
+            <div class="lecture__selector__bottom__content">
+              <div class="lecture__selector__title">
+                <h5 class="m-0">Bộ lọc</h5>
+              </div>
+              <div class="lecture__selector__filter">
+                <form action="" method="get" class="d-flex align-items-center justify-content-around column-gap-5">
+                  <div class="form-group">
+                    <div class="khoi">
+                      <div>
+                        <h6>Lớp</h6>
+                      </div>
+                      <div class="d-flex column-gap-3">
+                        <div>
+                          <input type="checkbox" id="khoi6" name="khoi" value="6">
+                          <label for="khoi6">Khối 6</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="khoi7" name="khoi" value="7">
+                          <label for="khoi7">Khối 7</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="khoi8" name="khoi" value="8">
+                          <label for="khoi8">Khối 8</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="khoi9" name="khoi" value="9">
+                          <label for="khoi9">Khối 9</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hocKy">
+                      <div>
+                        <h6>Học kỳ</h6>
+                      </div>
+                      <div class="d-flex column-gap-3">
+                        <div>
+                          <input type="checkbox" id="hocKy1" name="hocKy" value="1">
+                          <label for="hocKy1">Học Kỳ 1</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="hocKy2" name="hocKy" value="2">
+                          <label for="hocKy2">Học Kỳ 2</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="toHopMon">
+                      <div>
+                        <h6>Tổ hợp môn</h6>
+                      </div>
+                      <div class="d-flex column-gap-3">
+                        <div>
+                          <input type="checkbox" id="toan" name="toHopMon" value="toan">
+                          <label for="toan">Tự nhiên</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="ly" name="toHopMon" value="ly">
+                          <label for="ly">Xã hội</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="hoa" name="toHopMon" value="hoa">
+                          <label for="hoa">Thể chất</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="button--blue btn">Lọc</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="lecture__list__content my-5">
+          <div class="lecture__list__content__title mb-4">
+            <h5>Danh sách bài giảng</h5>
+          </div>
+          <div class="lecture__list__content__list d-flex flex-column row-gap-4">
+            <div class="lecture__item row">
+              <div class="col-10">
+                <div class="d-flex align-items-center column-gap-3">
+                  <div class="item__info">
+                    <p>14, Th8</p>
+                    <p>45:00</p>
+                  </div>
+                  <div class="item__content">
+                    <h6>Phân tích nhân vật Tnú trong truyện ngắn “ Rừng xà nu ”</h6>
+                    <p class="desc">
+                      Bài giảng tập trung phân tích hình tượng Tnú, một nhân vật điển hình cho tinh thần đấu tranh bất
+                      khuất của người dân Tây
+                      Nguyên trong kháng chiến chống Mỹ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 d-flex align-items-center justify-content-end">
+                <div class="playIcon d-flex justify-content-center align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <path
+                      d="M21.945 3.66699C11.825 3.66699 3.61169 11.8803 3.61169 22.0003C3.61169 32.1203 11.825 40.3337 21.945 40.3337C32.065 40.3337 40.2784 32.1203 40.2784 22.0003C40.2784 11.8803 32.0834 3.66699 21.945 3.66699ZM27.445 26.0887L22.1284 29.1503C21.4684 29.5353 20.735 29.7187 20.02 29.7187C19.2867 29.7187 18.5717 29.5353 17.9117 29.1503C16.5917 28.3803 15.8034 27.0237 15.8034 25.4837V19.342C15.8034 17.8203 16.5917 16.4453 17.9117 15.6753C19.2317 14.9053 20.8084 14.9053 22.1467 15.6753L27.4634 18.737C28.7834 19.507 29.5717 20.8637 29.5717 22.4037C29.5717 23.9437 28.7834 25.3187 27.445 26.0887Z"
+                      fill="#6172F3" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="lecture__item row">
+              <div class="col-10">
+                <div class="d-flex align-items-center column-gap-3">
+                  <div class="item__info">
+                    <p>12, Th9</p>
+                    <p>45:00</p>
+                  </div>
+                  <div class="item__content">
+                    <h6>Giá trị nhân đạo trong “ Truyện Kiều “</h6>
+                    <p class="desc">
+                      Bài giảng sẽ khám phá các giá trị nhân đạo sâu sắc qua số phận và tình yêu của Thúy Kiều, đặc biệt
+                      trong bối cảnh xã hội
+                      phong kiến khắc nghiệt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 d-flex align-items-center justify-content-end">
+                <div class="playIcon d-flex justify-content-center align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <path
+                      d="M21.945 3.66699C11.825 3.66699 3.61169 11.8803 3.61169 22.0003C3.61169 32.1203 11.825 40.3337 21.945 40.3337C32.065 40.3337 40.2784 32.1203 40.2784 22.0003C40.2784 11.8803 32.0834 3.66699 21.945 3.66699ZM27.445 26.0887L22.1284 29.1503C21.4684 29.5353 20.735 29.7187 20.02 29.7187C19.2867 29.7187 18.5717 29.5353 17.9117 29.1503C16.5917 28.3803 15.8034 27.0237 15.8034 25.4837V19.342C15.8034 17.8203 16.5917 16.4453 17.9117 15.6753C19.2317 14.9053 20.8084 14.9053 22.1467 15.6753L27.4634 18.737C28.7834 19.507 29.5717 20.8637 29.5717 22.4037C29.5717 23.9437 28.7834 25.3187 27.445 26.0887Z"
+                      fill="#6172F3" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="lecture__item row">
+              <div class="col-10">
+                <div class="d-flex align-items-center column-gap-3">
+                  <div class="item__info">
+                    <p>12, Th9</p>
+                    <p>45:00</p>
+                  </div>
+                  <div class="item__content">
+                    <h6>Giá trị nhân đạo trong “ Truyện Kiều “</h6>
+                    <p class="desc">
+                      Bài giảng sẽ khám phá các giá trị nhân đạo sâu sắc qua số phận và tình yêu của Thúy Kiều, đặc biệt
+                      trong bối
+                      cảnh xã hội
+                      phong kiến khắc nghiệt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 d-flex align-items-center justify-content-end">
+                <div class="playIcon d-flex justify-content-center align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <path
+                      d="M21.945 3.66699C11.825 3.66699 3.61169 11.8803 3.61169 22.0003C3.61169 32.1203 11.825 40.3337 21.945 40.3337C32.065 40.3337 40.2784 32.1203 40.2784 22.0003C40.2784 11.8803 32.0834 3.66699 21.945 3.66699ZM27.445 26.0887L22.1284 29.1503C21.4684 29.5353 20.735 29.7187 20.02 29.7187C19.2867 29.7187 18.5717 29.5353 17.9117 29.1503C16.5917 28.3803 15.8034 27.0237 15.8034 25.4837V19.342C15.8034 17.8203 16.5917 16.4453 17.9117 15.6753C19.2317 14.9053 20.8084 14.9053 22.1467 15.6753L27.4634 18.737C28.7834 19.507 29.5717 20.8637 29.5717 22.4037C29.5717 23.9437 28.7834 25.3187 27.445 26.0887Z"
+                      fill="#6172F3" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
   </main>
 
