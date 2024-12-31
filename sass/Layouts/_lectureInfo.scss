@@ -1,0 +1,32 @@
+.lecture__info {
+  .lecture__info__content {
+    .lecture__info__content__title {
+      h5 {
+        @include styleText($color-blue-7, $fs-5, $fw-1);
+      }
+    }
+  }
+  .lecture__info__content__item {
+    p {
+      margin: 0;
+    }
+    .lecture__item {
+      border: 1px solid #c7d7fe;
+      border-top-right-radius: $border-radius-100;
+      border-bottom-right-radius: $border-radius-100;
+      border-top-left-radius: $border-radius-15;
+      border-bottom-left-radius: $border-radius-15;
+      padding: $pd-1 $pd-0;
+      transition: all 0.3s;
+      h5 {
+        @include styleText($color-gray-0, $fs-3, $fw-0);
+      }
+      &:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        background-color: $white;
+        border-left-width: $border-radius-10;
+        border-left-color: $color-blue-2;
+      }
+    }
+  }
+}

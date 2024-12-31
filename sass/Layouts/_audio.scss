@@ -1,0 +1,60 @@
+body {
+  background: url("../img/playBg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.playLectureSetting {
+  padding: $pd-4 0;
+  .play__content {
+    border-bottom: 1px solid $color-gray-2;
+    padding-bottom: $pd-1;
+    .play__content__left {
+      h5 {
+        @include styleText($color-blue-7, $fs-5, $fw-1);
+        margin: 0;
+      }
+    }
+    .play__content__right {
+      a {
+        @include styleText($white, $fs-1, $fw-0);
+        text-decoration: none;
+        border-radius: $border-radius-10;
+      }
+    }
+  }
+}
+
+.audio__play {
+  .audio-container {
+    min-height: 300px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: $border-radius-15;
+    padding: $pd-5;
+    .audio-title {
+      width: 85%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      @include styleText($color-blue-7, $fs-7, $fw-1);
+      span {
+        @include styleText($color-dark-2, $fs-5, $fw-1);
+        margin-left: $mg-3;
+      }
+    }
+    .next-content {
+      border: 1px solid $color-blue-4;
+      padding: $pd-2 $pd-0;
+      border-radius: $border-radius-10;
+      @include styleText($color-blue-3, $fs-0, $fw-0);
+      a {
+        text-decoration: none;
+        @include styleText($color-gray-0, $fs-0, $fw-0);
+      }
+    }
+  }
+  audio {
+    min-width: 500px;
+  }
+}
